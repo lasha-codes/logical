@@ -1,0 +1,74 @@
+.TODO-container {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow-x: hidden;
+}
+
+.TODO-container .TODOS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.TODO-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.TODO-container .TODOS .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  min-width: 200px;
+  max-width: 300px;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.TODO-container .TODOS div h1 {
+  font-size: 21px;
+  font-family: cursive;
+}
+
+.TODO-container .TODOS .text-wrapper {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.TODO-container .TODOS .wrapper .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  font-size: 10px;
+  color: rgb(247, 116, 116);
+}
+
+.TODO-container .TODOS .wrapper .edit-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: none;
+  font-size: 10px;
+}
+
+.edit-div {
+  background-color: rgb(214, 214, 214);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #fff;
+}

@@ -1,0 +1,60 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  height: 200vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.progress-bar {
+  margin-top: 10px;
+  width: 30%;
+  height: 25px;
+  overflow: hidden;
+  background-color: gray;
+  border-radius: 20px;
+  position: fixed;
+}
+
+.progress-bar-color {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to left, #d48de2, rgb(211, 190, 190));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 20px;
+}
+
+.progress-bar-percent {
+  position: absolute;
+  right: 50%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cursor {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: none;
+  border: 1px solid white;
+  transition: 1s all ease-out;
+}

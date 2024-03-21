@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.wordle-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cash {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.wordle-container .rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wordle-container .columns {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Poppins';
+}
+
+.columns {
+  transition: all 1s ease-out;
+}
+
+.keyboard {
+  display: flex;
+  gap: 10px;
+  max-width: 490px;
+  min-width: 400px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard .key-cap {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  font-family: 'Anta', sans-serif;
+  cursor: pointer;
+}
+
+.key-cap:hover {
+  background: #b9b5b5;
+  color: #00000048;
+}
+
+.reset-btn {
+  margin-top: 20px;
+}
